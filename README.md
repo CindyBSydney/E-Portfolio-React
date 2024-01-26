@@ -1,5 +1,5 @@
 # E-Portfolio-React
-This React-based E-Portfolio showcases my skills, work experience, and projects. Check out the live version [here](https://cindybsydney.github.io/My-Portfolio/)
+![React icon](assets/react.svg) This React-based E-Portfolio showcases my skills, work experience, and projects. Check out the live version [here](https://cindybsydney.github.io/My-Portfolio/)
 
 ## Features
 1. Sections: Skills, Work Experience, Projects, and Contact Info.
@@ -58,7 +58,7 @@ This React-based E-Portfolio showcases my skills, work experience, and projects.
 
 - Before deconstructing:
 
-  ```jsx
+```jsx
   const SchoolComponent = (props) => {
     return (
       <div>
@@ -67,6 +67,7 @@ This React-based E-Portfolio showcases my skills, work experience, and projects.
       </div>
     );
   };
+```
 
 - After deconstructing
 
@@ -86,8 +87,17 @@ const SchoolComponent = ({ name, location }) => {
 8. How is it possible to use HTML and JavaScript in the same function (like in a React Component)? What makes it possible under the hood?
 - It is possible because of JavaScript XML (JSX) which is a combination of JavaScript and HTML. 
 
-![jsx sample code](assets/jsxExample.png)
+```jsx
+  import { createElement } from 'react';
 
+  function Greeting ({ name }) {
+    return createElement (
+        'h1',
+        { className: 'greeting' },
+        'Hello'
+    );
+  }
+```
 - What makes it possible under the hood is createElement. createElement takes in three arguments:
 > 1. Type: The type of element being created, for example a HTML tag like `div`, `span`, or a React component. In the example above the type is a `h1` header. 
 > 2. Props: This is an object containing the properties or attributes to be set on the element. This includes things like `className`, `id`, and event handlers like `onClick`. In the above example, the `className` is the prop. 
@@ -125,7 +135,21 @@ delayedLog("Hello", 2000);
 - A promise is an object that represents the eventual completion or failure of an asynchronous operation. 
 - It has three states, `pending()`, `resolved()` and `rejected()`. 
 
-![promise sample code](assets/promiseExample.png)
+```js
+    fetch('https://api.example.com/data')
+    .then(response => {
+        if (!response.ok) {
+        throw new Error('Network response was not ok');
+        }
+        return response.json();
+    })
+    .then(data => {
+        console.log(data); 
+    })
+    .catch(error => {
+        console.error('There has been a problem with your fetch operation:', error);
+    });
+```
 
 - `fetch` is used to get data from an API. When the `fetch` request is first made, the Promise is in the `pending` state. It returns a Promise that resolves to the response of the request. 
 
