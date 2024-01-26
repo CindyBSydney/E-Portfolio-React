@@ -31,11 +31,11 @@ This React-based E-Portfolio showcases my skills, work experience, and projects.
 - Manages asynchronous operations in JavaScript, allowing non-blocking execution. This means that the program can continue to run while waiting for asynchronous tasks to complete. This is crucial in JavaScript's single-threaded environment, allowing it to handle multiple tasks concurrently. 
 
 4. What is the difference between `export x` and `export default x`? How do you import them differently?
-`export x`: This is necessary to make a function available for importing into other files. There can be multiple exports in one component. It is used to export named values. 
+- `export x`: This is necessary to make a function available for importing into other files. There can be multiple exports in one component. It is used to export named values. 
 - To import this, it is done as follows:
     `import { x } from ./component;`
 
-`export default x`: This is used to export a single value as the default export from file. Each file can have only one default export. It serves as the primary function in each component. 
+- `export default x`: This is used to export a single value as the default export from file. Each file can have only one default export. It serves as the primary function in each component. 
 - For a default export, import is done without curly braces: 
     `import x from ./component;`
 
@@ -47,11 +47,11 @@ This React-based E-Portfolio showcases my skills, work experience, and projects.
 
 6. Why should you not write the following? What will happen?
 
-`<button onClick = {setCounter (counter + 1)}> +1 </button>`
+- `<button onClick = {setCounter (counter + 1)}> +1 </button>`
 
 - This will make the `setCounter (counter + 1)` to be executed every time the component renders, rather than only when the button is clicked. 
 - To correct it, the function `onClick` should be passed so that the state is updated only when the button is clicked.
-`<button onClick = {() => setCounter (counter + 1)}> +1 </button>`
+- `<button onClick = {() => setCounter (counter + 1)}> +1 </button>`
 
 7. What is object deconstruction and how is it connected to React components (example)?
 - Object deconstruction a way of extracting properties from an object and assigning them to variables. It is useful in React components for props and state management.
