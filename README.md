@@ -39,7 +39,8 @@ This React-based E-Portfolio showcases my skills, work experience, and projects.
 - For a default export, import is done without curly braces: 
     `import x from ./component;`
 
--Default exports don’t require curly braces and don’t need to match the exported name, while named exports do.
+- summary : `export`: Named export. Imported with {}. Multiple exports per file.
+            `export default`: Single primary export per file. Imported without {}.
 
 5. Why do you use className as a property in React and not class? 
 - `Class`` is a reserved keyword in JavaScript.
