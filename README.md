@@ -43,7 +43,7 @@ This React-based E-Portfolio showcases my skills, work experience, and projects.
             `export default`: Single primary export per file. Imported without {}.
 
 5. Why do you use className as a property in React and not class? 
-- `Class`` is a reserved keyword in JavaScript.
+- `Class` is a reserved keyword in JavaScript.
 
 6. Why should you not write the following? What will happen?
 
@@ -89,13 +89,13 @@ const SchoolComponent = ({ name, location }) => {
 ![jsx sample code](assets/jsxExample.png)
 
 - What makes it possible under the hood is createElement. createElement takes in three arguments:
-> 1. Type: The type of element being created, for example a HTML tag like div, span, or a React component. In the example above the type is a h1 header. 
-> 2. Props: This is an object containing the properties or attributes to be set on the element. This includes things like className, id, and event handlers like onClick. In the above example, the className is the prop. 
+> 1. Type: The type of element being created, for example a HTML tag like `div`, `span`, or a React component. In the example above the type is a `h1` header. 
+> 2. Props: This is an object containing the properties or attributes to be set on the element. This includes things like `className`, `id`, and event handlers like `onClick`. In the above example, the `className` is the prop. 
 > 3. Children: This can be a text, another createElement call, or an array of elements for multiple children. In the example above, this is represented by the text ‘Hello’.
 
 9. What is `async`/`await`? 
 
-- `async` Function: When put async before a function, it means this function is asynchronous. It can perform operations in the background and doesn't block other code from running. Essentially, it tells the function to return a promise, a placeholder for the eventual result.
+- `async` Function: When put `async` before a function, it means this function is asynchronous. It can perform operations in the background and doesn't block other code from running. Essentially, it tells the function to return a promise, a placeholder for the eventual result.
 - For example, when fetching data from a server, await lets other parts of the script continue running while waiting for the data.
 
 ```js
@@ -105,9 +105,9 @@ async function fetchData() {
   console.log(data);
 }
 ```
-- `fetchData` is an async function. It waits for the fetch to complete, and then waits for the conversion to JSON. The rest of the JavaScript code keeps running as these operations are being completed.
+- `fetchData` is an `async` function. It waits for the fetch to complete, and then waits for the conversion to JSON. The rest of the JavaScript code keeps running as these operations are being completed.
 
-- `await` Keyword: When is used inside an `async` function, `await`` pauses the function until a specific asynchronous operation (like data fetching) is finished. This allows other code to run without being blocked.
+- `await` Keyword: When is used inside an `async` function, `await` pauses the function until a specific asynchronous operation (like data fetching) is finished. This allows other code to run without being blocked.
 
 ```js
 async function delayedLog(message, delay) {
@@ -118,7 +118,7 @@ async function delayedLog(message, delay) {
 delayedLog("Hello", 2000);
 
 ```
-- `async`/`await` can be used with setTimeout to create delays without blocking the execution thread. DelayedLog waits for a specified delay before logging a message.
+- `async`/`await` can be used with `setTimeout` to create delays without blocking the execution thread. `delayedLog` waits for a specified delay before logging a message.
 
 
 10. What is a Promise? 
@@ -127,11 +127,11 @@ delayedLog("Hello", 2000);
 
 ![promise sample code](assets/promiseExample.png)
 
-- Fetch is used to get data from an API. When the fetch request is first made, the Promise is in the pending state. It returns a Promise that resolves to the response of the request. 
+- `fetch` is used to get data from an API. When the `fetch` request is first made, the Promise is in the `pending` state. It returns a Promise that resolves to the response of the request. 
 
-- If the fetch request is successful and the response is received, the Promise transitions to the resolved state. `.then()` is then used to process the response, converting it to JSON. Another `.then()` is used to process the JSON data. 
+- If the `fetch` request is successful and the response is received, the Promise transitions to the `resolved` state. `.then()` is then used to process the response, converting it to JSON. Another `.then()` is used to process the JSON data. 
 
-- If there is an error (like a network issue or if the response is not OK), the Promise is rejected. This is handled in the `.catch()` method, where the error is logged.
+- If there is an error (like a network issue or if the response is not OK), the Promise is `rejected`. This is handled in the `.catch()` method, where the error is logged.
 
 
 
