@@ -2,6 +2,7 @@
 import React from 'react';
 import styles from './MainSection.module.css'; 
 import coverPhoto from '../assets/cover-photo.jpg';
+import Button from './Button';
 
 const MainSection = () => {
     return (
@@ -12,8 +13,8 @@ const MainSection = () => {
                     <h3>Web Developer</h3>
                     <h3>Machine Learning Engineer</h3>
                     <h3>Cybersecurity Analyst</h3>
-                </div>       
-                <a href="https://github.com/CindyBSydney" target="_blank" className={styles.button}>My projects</a>
+                </div> 
+                <Button href="https://github.com/CindyBSydney" target="_blank"> My projects</Button>
                 <div className={styles.mediaIcons}>
                     <a href="https://www.linkedin.com/in/cindy-bosibori" target="_blank" rel="noopener noreferrer"><i className="fab fa-linkedin"></i></a>
                     <a href="mailto:bosibori.sydney@gmail.com" target="_blank" rel="noopener noreferrer"><i className="fas fa-envelope"></i></a>
