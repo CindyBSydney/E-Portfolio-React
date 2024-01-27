@@ -1,0 +1,18 @@
+.button{
+    color: var(--white-color);
+    background: var(--pink-2-color);
+    font-size: 1em;
+    font-weight: 600;
+    display: inline-block;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 1px;
+    border-radius: 3px;
+    transition: 0.5s ease;
+    margin-top: 30px;
+}
+
+.button:hover{
+    background: var(--pink-3-color);
+}
