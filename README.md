@@ -1,5 +1,5 @@
 # E-Portfolio-React
-![React icon](/my-app/src/assets/react.png) This React-based E-Portfolio showcases my skills, work experience, and projects. Check out the live version [here](https://cindybsydney.github.io/My-Portfolio/)
+![React icon](/src/assets/react.png) This React-based E-Portfolio showcases my skills, work experience, and projects. Check out the live version [here](https://cindybsydney.github.io/My-Portfolio/)
 
 ## Features
 1. Sections: Skills, Work Experience, Projects, and Contact Info.
