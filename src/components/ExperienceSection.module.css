@@ -1,0 +1,65 @@
+/* ExperienceSection.module.css */
+.contentTitle {
+    color: var(--brown-3-color);
+    font-size: 1.5em;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    position: relative;
+    text-align: center;
+}
+
+.experience {
+    width: 100%;
+    align-items: center;
+    margin-top: 60px;
+    background: url(../assets/background8.png) no-repeat center;   
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    text-align: center;
+}
+
+.experienceCards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 60px;
+}
+
+.experienceCard {
+    width: 200px; 
+    background-color: var(--white-color);
+    color: var(--brown-3-color);
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 10px;
+    box-sizing: border-box;
+    line-height: 30px;
+    font-size: 0.9em;
+    font-weight: 100;
+    letter-spacing: 0.8px;
+    position: relative;
+}
+
+.heading6 {
+    text-decoration: underline;
+}
+
+
+@media screen and (max-width: 768px) {
+    .experience {
+        margin-top: 40px; 
+
+    }
+    .experience-cards {
+        justify-content: center;
+        text-align: center; 
+        flex-direction: row; 
+        width: 100%;
+    }
+
+    .experience-card {
+        margin: 10px; 
+        display: inline-block; 
+    }
+}
