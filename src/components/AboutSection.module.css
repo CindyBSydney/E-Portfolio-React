@@ -1,0 +1,104 @@
+/* AboutSection.module.css */
+.title{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.sectionTitle{
+    color: var(--brown-2-color);
+    font-size: 2.5em;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 60px;
+    position: relative;
+}
+
+.sectionTitle::before{
+    content: '';
+    position: absolute;
+    top: 58px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200px;
+    height: 7px;
+    background: var(--brown-5-color);
+    border-radius: 50%;
+}
+
+.sectionTitle::after{
+    content: '';
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20px;
+    height: 20px;
+    background: var(--pink-2-color);
+    border-radius: 50%;
+}
+
+.about .content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: relative;
+}
+
+.about .content .colLeft{
+    width: 45%;
+    position: relative;
+}
+
+.about .content .colRight{
+    width: 50%;
+    position: relative;
+}
+
+.about .content .colRight .contentTitle{
+    color: var(--brown-3-color);
+    font-size: 1.8em;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    position: relative;
+
+}
+
+.about .content .colRight .paragraph{
+    color: var(--brown-4-color);
+    font-size: 1.2em;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    line-height: 30px;
+    position: relative;
+}
+.imageDiv{
+    margin-left: 30px;
+}
+.image {
+    border-radius: 50% 50% 0 0;
+    border: 1px solid var(--pink-4-color);
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+    display: block;
+}
+
+@media screen and (max-width: 768px) {
+    .sectionTitle {
+        font-size: 2em;
+    }
+    .content {
+        flex-direction: column;
+    }
+    .column {
+        position: relative;
+        width: 100%;
+    }
+    .colRight {
+        margin-top: 40px;
+    }
+}
