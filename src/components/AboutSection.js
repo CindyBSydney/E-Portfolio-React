@@ -4,12 +4,13 @@ import styles from './AboutSection.module.css';
 import coverPhoto from '../assets/cover-photo.jpg'; 
 import Button from './Button';
 import resume from '../assets/Bosibori_Cindy_Sydney_CV.pdf';
+import SectionTitle from './SectionTitle';
 
 const AboutSection = () => {
     return (
         <section className={styles.about} id="about">
             <div className={styles.title}>
-                <h2 className={styles.sectionTitle}>About Me</h2>
+                <SectionTitle title="About Me" />
             </div>
             <div className={styles.content}>
                 <div className={styles.colLeft}>
