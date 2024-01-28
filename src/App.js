@@ -7,6 +7,7 @@ import ExperienceSection from './components/ExperienceSection';
 import ServicesSection from './components/ServicesSection'; 
 import ProjectsSection from './components/ProjectsSection';
 import ContactSection from './components/ContactSection';
+import FooterSection from './components/FooterSection';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <ServicesSection /> {/* Render ServicesSection component */}
       <ProjectsSection /> {/* Render ProjectsSection component */}
       <ContactSection /> {/* Render ContactSection component */}
+      <FooterSection /> {/* Render FooterSection component */}
     </div>
   );
 }
