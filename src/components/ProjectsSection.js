@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import styles from './ProjectsSection.module.css';
 import SectionTitle from './SectionTitle';
 import Button from './Button';
@@ -7,42 +7,54 @@ import gastroHubImage from '../assets/gastrohub2.jpg';
 import gastricCancerImage from '../assets/gastric-cancer.png'; 
 
 const ProjectsSection = () => {
+    const [repos, setRepos] = useState([]);
+
+    useEffect(() => {
+        const fetchData = async () => {
+            try {
+                const response = await fetch('https://api.github.com/users/CindyBSydney/repos');
+                const data = await response.json();
+                const repoNames = ['Helping-Hands', 'Gastro-Hub', 'Gastric-Cancer-MSI-H-Detection'];
+                const filteredData = data.filter(repo => repoNames.includes(repo.name));
+                setRepos(filteredData);
+            } catch (error) {
+                console.error('Error fetching GitHub data:', error);
+            }
+        };
+
+        fetchData();
+    }, []);
+
+    // Map repo data to project information
+    const projectsInfo = [
+        { name: 'Helping Hands', image: helpingHandsImage, repoName: 'Helping-Hands' },
+        { name: 'Gastro Hub Dashboard', image: gastroHubImage, repoName: 'Gastro-Hub' },
+        { name: 'Gastric Cancer MSI-H Detection', image: gastricCancerImage, repoName: 'Gastric-Cancer-MSI-H-Detection' },
+    ];
+
+    const projects = projectsInfo.map(project => {
+        const repo = repos.find(r => r.name === project.repoName);
+        const description = repo ? repo.description : "Loading...";
+        return { ...project, description };
+    });
+
     return (
         <section className={styles.projects} id="projects">
             <div className={styles.title}>
                 <SectionTitle title="Projects" />
             </div>
             <div className={styles.content}>
-                {/* Project 1 */}
-                <div className={styles.card}>
-                    <div className={styles.cardImg}>
-                        <img src={helpingHandsImage} alt="Helping Hands project" />
+                {projects.map((project, index) => (
+                    <div className={styles.card} key={index}>
+                        <div className={styles.cardImg}>
+                            <img src={project.image} alt={`${project.name} project`} />
+                        </div>
+                        <div className={styles.info}>
+                            <h3 className={styles.infoContent}>{project.name}</h3>
+                            <p className={styles.servicesContent}>{project.description}</p>
+                        </div>
                     </div>
-                    <div className={styles.info}>
-                        <h3 className={styles.infoContent}>Helping Hands</h3>
-                        <p className={styles.servicesContent}>A donation platform created using HTML, CSS, JS and PHP.</p>
-                    </div>
-                </div>
-                {/* Project 2 */}
-                <div className={styles.card}>
-                    <div className={styles.cardImg}>
-                        <img src={gastroHubImage} alt="Gastro Hub Image" />
-                    </div>
-                    <div className={styles.info}>
-                        <h3 className={styles.infoContent}>Gastro Hub Dashboard</h3>
-                        <p className={styles.servicesContent}>A medical dashboard created using HTML, CSS and PHP.</p>
-                    </div>
-                </div>
-                {/* Project 3 */}
-                <div className={styles.card}>
-                    <div className={styles.cardImg}>
-                        <img src={gastricCancerImage} alt="Gastric Cancer Detection" />
-                    </div>
-                    <div className={styles.info}>
-                        <h3 className={styles.infoContent}>Gastric cancer Detection</h3>
-                        <p className={styles.servicesContent}>Gastric cancer detection model created using Python.</p>
-                    </div>
-                </div>
+                ))}
             </div>
             <div className={styles.content}>
                 <Button href="https://github.com/CindyBSydney" target="_blank"> See More Projects</Button>
@@ -52,3 +64,4 @@ const ProjectsSection = () => {
 };
 
 export default ProjectsSection;
+
