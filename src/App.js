@@ -5,6 +5,7 @@ import NavbarSection from './components/NavbarSection';
 import AboutSection from './components/AboutSection';
 import ExperienceSection from './components/ExperienceSection';
 import ServicesSection from './components/ServicesSection'; 
+import ProjectsSection from './components/ProjectsSection';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <AboutSection /> {/* Render AboutSection component */}
       <ExperienceSection /> {/* Render ExperienceSection component */}
       <ServicesSection /> {/* Render ServicesSection component */}
+      <ProjectsSection /> {/* Render ProjectsSection component */}
     </div>
   );
 }
