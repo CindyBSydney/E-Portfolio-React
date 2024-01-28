@@ -21,7 +21,8 @@
 
 .experienceCards {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
     margin-bottom: 60px;
 }
@@ -31,7 +32,7 @@
     background-color: var(--white-color);
     color: var(--brown-3-color);
     padding: 15px;
-    margin: 10px 0;
+    margin: 5px;
     border-radius: 10px;
     box-sizing: border-box;
     line-height: 30px;
@@ -39,6 +40,7 @@
     font-weight: 100;
     letter-spacing: 0.8px;
     position: relative;
+    height: 250px;
 }
 
 .heading6 {
@@ -49,12 +51,12 @@
 @media screen and (max-width: 768px) {
     .experience {
         margin-top: 40px; 
-
     }
     .experience-cards {
+        display: flex;
         justify-content: center;
-        text-align: center; 
-        flex-direction: row; 
+        align-items: center;
+        flex-direction: column; 
         width: 100%;
     }
 
