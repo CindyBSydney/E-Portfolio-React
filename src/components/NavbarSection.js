@@ -17,17 +17,21 @@ const NavbarSection = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  const minimizeMenu = () => {
+    setMenuActive(false);
+  };
+
   return (
     <header className={`${styles.header} ${isSticky ? styles.sticky : ''}`}>
       <a href="#" className={styles.brand}>Bosibori</a>
       <div className={styles.menuButton} onClick={() => setMenuActive(!menuActive)}></div>
       <div className={`${styles.navigation} ${menuActive ? styles.active : ''}`}>
-        <a href="#main">Home</a>
-        <a href="#about">About</a>
-        <a href="#experience">Experience</a>
-        <a href="#services">Services</a>
-        <a href="#projects">My Projects</a>
-        <a href="#contact">Contact</a>
+        <a href="#main" onClick={minimizeMenu}>Home</a>
+        <a href="#about" onClick={minimizeMenu}>About</a>
+        <a href="#experience" onClick={minimizeMenu}>Experience</a>
+        <a href="#services" onClick={minimizeMenu}>Services</a>
+        <a href="#projects" onClick={minimizeMenu}>My Projects</a>
+        <a href="#contact" onClick={minimizeMenu}>Contact</a>
       </div>
     </header>
   );
