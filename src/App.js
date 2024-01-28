@@ -4,6 +4,7 @@ import MainSection from './components/MainSection';
 import NavbarSection from './components/NavbarSection';
 import AboutSection from './components/AboutSection';
 import ExperienceSection from './components/ExperienceSection';
+import ServicesSection from './components/ServicesSection'; 
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <NavbarSection /> {/* Render NavbarSection component */}
       <AboutSection /> {/* Render AboutSection component */}
       <ExperienceSection /> {/* Render ExperienceSection component */}
+      <ServicesSection /> {/* Render ServicesSection component */}
     </div>
   );
 }
