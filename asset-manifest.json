@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/E-Portfolio-React/static/css/main.df500b6b.css",
+    "main.js": "/E-Portfolio-React/static/js/main.c1b346ca.js",
+    "static/js/787.d4aba7ab.chunk.js": "/E-Portfolio-React/static/js/787.d4aba7ab.chunk.js",
+    "static/media/background7.png": "/E-Portfolio-React/static/media/background7.817a6b086d4e2614a430.png",
+    "static/media/background5.png": "/E-Portfolio-React/static/media/background5.e61f413958d618dc1113.png",
+    "static/media/background8.png": "/E-Portfolio-React/static/media/background8.41b5fad36f40272d89d3.png",
+    "static/media/gastric-cancer.png": "/E-Portfolio-React/static/media/gastric-cancer.2cab715419956a04a7fd.png",
+    "static/media/helping-hands.png": "/E-Portfolio-React/static/media/helping-hands.e5bba2c8b4eea9c5a74e.png",
+    "static/media/cover-photo.jpg": "/E-Portfolio-React/static/media/cover-photo.b171c5e6086197f9ff5f.jpg",
+    "index.html": "/E-Portfolio-React/index.html",
+    "main.df500b6b.css.map": "/E-Portfolio-React/static/css/main.df500b6b.css.map",
+    "main.c1b346ca.js.map": "/E-Portfolio-React/static/js/main.c1b346ca.js.map",
+    "787.d4aba7ab.chunk.js.map": "/E-Portfolio-React/static/js/787.d4aba7ab.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.df500b6b.css",
+    "static/js/main.c1b346ca.js"
+  ]
+}
