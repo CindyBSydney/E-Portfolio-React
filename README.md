@@ -1,23 +1,27 @@
 # E-Portfolio-React
-![React icon](/src/assets/react.png) This React-based E-Portfolio showcases my skills, work experience, and projects. Check out the live version [here](https://cindybsydney.github.io/My-Portfolio/)
+![React icon](/src/assets/react.png) This React-based E-Portfolio showcases my skills, work experience, and projects. Check out the live version [here](https://cindybsydney.github.io/E-Portfolio-React/)
 
 ## Features
 1. Sections: Skills, Work Experience, Projects, and Contact Info.
 2. Responsive Design: Optimized for various screen sizes.
 3. Adaptive Navbar: Transforms into a menu icon on smaller screens using Vanilla JS.
 
-## Usage
-### 1. Cloning the repository
+
+### Usage
+### 1. Cloning the Repository
 > 1. On GitHub page, click the green `code` button.
 > 2. Copy the web URL.
 > 3. In GitHub Desktop, choose `File > Clone Repository` and paste the [URL](https://github.com/CindyBSydney/E-Portfolio-React).
 > 4. With command line, use the command `git clone https://github.com/CindyBSydney/E-Portfolio-React.git`.
-> 5. Navigate to the directory of your newly cloned repository and open `index.html` on any web browser of your choice.
+> 5. Open your command line or terminal.
+> 6. Navigate to the directory of your newly cloned repository: `cd E-Portfolio-React`
+> 7. Install Dependencies:
+>     Run `npm install` to install all required dependencies.
 
-> ### 2. Downloading as ZIP
-> 1. Click `code > Download ZIP` on the [GitHub page](https://github.com/CindyBSydney/E-Portfolio-React).
-> 2. Unzip the folder's contents into your desired directory.
-> 3. Unzip and open `index.html` in a browser.
+### Running the App
+> 1. Start the Development Server: 
+>     Inside the project directory, run `npm start`. This will run the app in development mode.
+> 2. Open `http://localhost:3000` to view it in your browser.
 
 ## Questions 
 1. What is NPM? 
