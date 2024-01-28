@@ -3,7 +3,6 @@ import React from 'react';
 import styles from './AboutSection.module.css';
 import coverPhoto from '../assets/cover-photo.jpg'; 
 import Button from './Button';
-import resume from '../assets/Bosibori_Cindy_Sydney_CV.pdf';
 import SectionTitle from './SectionTitle';
 
 const AboutSection = () => {
@@ -21,7 +20,7 @@ const AboutSection = () => {
                 <div className={styles.colRight}>
                     <h2 className={styles.contentTitle}>Welcome to my Portfolio :)</h2>
                     <p className={styles.paragraph}>I am a seasoned web developer, machine learning engineer, and cybersecurity analyst with a fervent passion for technology and a commitment to continuous learning. <br /> I thrive as a collaborative team leader and player, dedicated to working with like-minded individuals who share a passion for their craft.</p>
-                    <Button href={resume} download="Bosibori_Cindy_Sydney.pdf">Download CV</Button>
+                    <Button href="https://drive.google.com/file/d/1j30YOh6LCVr7J1G6r4T-mgFxLiGCNOGl/view?usp=sharing" target="_blank">Download CV</Button>
                 </div>
             </div>
         </section>
