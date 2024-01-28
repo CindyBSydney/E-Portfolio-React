@@ -55,17 +55,21 @@
 }
 
 @media screen and (max-width: 768px) {
-    .sectionTitle {
-        font-size: 2em;
-    }
     .content {
         flex-direction: column;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
-    .column {
-        position: relative;
-        width: 100%;
+    .about .content .colRight{
+        margin: 40px 0 0 30px;
+        width: 300px;
     }
-    .colRight {
-        margin-top: 40px;
+    .colLeft {
+        margin: 0 0 0 -100px;
     }
+    .imageDiv{
+        margin-left: 0px;
+    }
+    
 }
