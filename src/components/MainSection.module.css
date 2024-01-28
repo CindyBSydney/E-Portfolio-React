@@ -59,6 +59,16 @@
     display: block;
 }
 
+.mediaIcons{
+    margin-top: 30px;
+}
+
+.mediaIcons a{
+    color: var(--white-color);
+    font-size: 25px;
+    margin-right: 30px;
+}
+
 @keyframes text-move{
     0%{
         margin-top: 0;
