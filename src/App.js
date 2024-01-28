@@ -8,6 +8,7 @@ import ServicesSection from './components/ServicesSection';
 import ProjectsSection from './components/ProjectsSection';
 import ContactSection from './components/ContactSection';
 import FooterSection from './components/FooterSection';
+import ScrollButton from './components/ScrollButton';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
       <ProjectsSection /> {/* Render ProjectsSection component */}
       <ContactSection /> {/* Render ContactSection component */}
       <FooterSection /> {/* Render FooterSection component */}
+      <ScrollButton /> {/* Render ScrollButton component */}
     </div>
   );
 }
