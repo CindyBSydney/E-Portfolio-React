@@ -34,7 +34,7 @@ const ServicesSection = () => {
                     </div>
                     <div className={styles.info}>
                         <h3>Website Development</h3>
-                        <p className={styles.servicesContent}>Capable of developing websites with a strong foundation in HTML, CSS, and JavaScript for the frontend, coupled with PHP for robust backend functionality.</p>
+                        <p className={styles.servicesContent}>Capable of developing websites with a strong foundation in HTML, CSS, JavaScript, and Typescript for the frontend, coupled with PHP and Python for robust backend functionality.</p>
                     </div>
                 </div>
             </div>    

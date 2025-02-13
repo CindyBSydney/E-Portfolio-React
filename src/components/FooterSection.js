@@ -5,7 +5,7 @@ const FooterSection = () => {
     return (
         <footer className={styles.footer} id="footer">
             <span className={styles.footerHeading}>Cindy Bosibori</span>
-            <p>Copyright @2023. All Rights Reserved.</p>
+            <p>Copyright @2025. All Rights Reserved.</p>
         </footer>
     );
 };

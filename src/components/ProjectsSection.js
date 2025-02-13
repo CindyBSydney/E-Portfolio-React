@@ -5,6 +5,7 @@ import Button from './Button';
 import helpingHandsImage from '../assets/helping-hands.png'; 
 import gastroHubImage from '../assets/gastrohub2.jpg'; 
 import gastricCancerImage from '../assets/gastric-cancer.png'; 
+import philanthroLinkImage from '../assets/philanthro-link.png';
 
 const ProjectsSection = () => {
     const [repos, setRepos] = useState([]);
@@ -28,7 +29,7 @@ const ProjectsSection = () => {
     // Map repo data to project information
     const projectsInfo = [
         { name: 'Helping Hands', image: helpingHandsImage, repoName: 'Helping-Hands' },
-        { name: 'Gastro Hub Dashboard', image: gastroHubImage, repoName: 'Gastro-Hub' },
+        { name: 'Philanthro-Link', image: philanthroLinkImage, repoName: 'philanthro-link' },
         { name: 'Gastric Cancer MSI-H Detection', image: gastricCancerImage, repoName: 'Gastric-Cancer-MSI-H-Detection' },
     ];
 
