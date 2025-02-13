@@ -27,13 +27,13 @@ const ExperienceSection = () => {
                     <h4 className={styles.contentTitle}>Machine Learning Engineer</h4>
                     <h4>Naivas Foodmarket</h4>
                     <h6 className={styles.heading6}>Nairobi, Kenya | 2023 - 2024</h6>
-                    <h5 className={styles.paragraph}>Generated actionable insights using Machine learning from customer data</h5>
+                    <h5 className={styles.paragraph}>Generated actionable insights using Machine learning</h5>
                 </div>
                 <div className={styles.experienceCard}>
                     <h4 className={styles.contentTitle}>Software Engineering Intern</h4>
                     <h4>AMT Africa</h4>
                     <h6 className={styles.heading6}>Nairobi, Kenya | 2023</h6>
-                    <h5 className={styles.paragraph}>Developed facial recognition and road-sign reader systems, labeled 6000 images.</h5>
+                    <h5 className={styles.paragraph}>Developed facial recognition and road-sign reader systems</h5>
                 </div>
                 
             </div>
