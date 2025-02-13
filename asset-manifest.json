@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/E-Portfolio-React/static/css/main.cd16439c.css",
-    "main.js": "/E-Portfolio-React/static/js/main.3ac7e873.js",
+    "main.js": "/E-Portfolio-React/static/js/main.e8351198.js",
     "static/js/787.d4aba7ab.chunk.js": "/E-Portfolio-React/static/js/787.d4aba7ab.chunk.js",
     "static/media/philanthro-link.png": "/E-Portfolio-React/static/media/philanthro-link.4dde2f6765c47ce53915.png",
     "static/media/background7.png": "/E-Portfolio-React/static/media/background7.817a6b086d4e2614a430.png",
@@ -12,11 +12,11 @@
     "static/media/cover-photo.jpg": "/E-Portfolio-React/static/media/cover-photo.b171c5e6086197f9ff5f.jpg",
     "index.html": "/E-Portfolio-React/index.html",
     "main.cd16439c.css.map": "/E-Portfolio-React/static/css/main.cd16439c.css.map",
-    "main.3ac7e873.js.map": "/E-Portfolio-React/static/js/main.3ac7e873.js.map",
+    "main.e8351198.js.map": "/E-Portfolio-React/static/js/main.e8351198.js.map",
     "787.d4aba7ab.chunk.js.map": "/E-Portfolio-React/static/js/787.d4aba7ab.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.cd16439c.css",
-    "static/js/main.3ac7e873.js"
+    "static/js/main.e8351198.js"
   ]
 }
